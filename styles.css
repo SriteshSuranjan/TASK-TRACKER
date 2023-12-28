@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#task-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    transform: rotateX(10deg);
+    transform-origin: bottom;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.task button {
+    cursor: pointer;
+}
+
+#theme-toggle {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 600px) {
+    #task-container {
+        width: 90%;
+    }
+}
+
+#task-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    /* Center the task container */
+    transform: rotateX(10deg);
+    transform-origin: bottom;
+}
+
+#theme-toggle-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    /* Center the button horizontally */
+}
+
+#theme-toggle {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    /* Add smooth transition */
+}
+
+#theme-toggle:hover {
+    transform: translateY(5px) translateZ(10px);
+    /* Apply both translations on hover */
+}
